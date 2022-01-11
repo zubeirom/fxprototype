@@ -7,17 +7,10 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+import static com.example.fxprototype.Utils.executeQuery;
+
 public class BookRepository {
-    Connection conn = Utils.getConnection();
-    private void executeQuery(String query) {
-        Statement st;
-        try {
-            st = conn.createStatement();
-            st.executeUpdate(query);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+
 
     public void insert(Book book) {
         String query = "insert into books values("+book.getId()+",'"+book.getTitle()+"','"+book.getAuthor()+"',"+book.getYear()+","+book.getPages()+")";
@@ -43,7 +36,7 @@ public class BookRepository {
         String query = "SELECT * FROM books ";
         Statement st;
         try {
-            st = conn.createStatement();
+            st = Utils.getConnection().createStatement();
             return st.executeQuery(query);
         } catch (Exception e) {
             e.printStackTrace();
