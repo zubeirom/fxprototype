@@ -1,16 +1,10 @@
 package com.example.fxprototype.Service;
 
 import com.example.fxprototype.Model.Book;
-import com.example.fxprototype.Model.BookDTO;
+import com.example.fxprototype.DTO.BookDTO;
 import com.example.fxprototype.Repository.BookRepository;
-import com.example.fxprototype.Utils;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 
-import javax.xml.transform.Result;
-import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 

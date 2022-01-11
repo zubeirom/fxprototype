@@ -10,4 +10,6 @@ module com.example.fxprototype {
     opens com.example.fxprototype.Controller to javafx.fxml;
     exports com.example.fxprototype.Model;
     opens com.example.fxprototype.Model to javafx.fxml;
+    exports com.example.fxprototype.DTO;
+    opens com.example.fxprototype.DTO to javafx.fxml;
 }

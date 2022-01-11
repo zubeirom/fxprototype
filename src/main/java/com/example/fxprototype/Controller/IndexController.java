@@ -1,9 +1,8 @@
 package com.example.fxprototype.Controller;
 
 import com.example.fxprototype.Model.Book;
-import com.example.fxprototype.Model.BookDTO;
+import com.example.fxprototype.DTO.BookDTO;
 import com.example.fxprototype.Service.BookService;
-import com.example.fxprototype.Utils;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -15,10 +14,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
 
 import java.util.ResourceBundle;
 

@@ -1,4 +1,4 @@
-package com.example.fxprototype.Model;
+package com.example.fxprototype.DTO;
 
 public class BookDTO {
     private final String id;
