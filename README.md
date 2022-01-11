@@ -1,4 +1,8 @@
-#FXPrototype
+#FXPrototype by Mouayad and Zubeir
+
+Requirements: <br>
+1. Java 11 or Greater
+2. Maven
 
 Steps to run the project: <br> <br>
 1. Make sure to have a mysql server instance running on port localhost:3306 <br> <br>
